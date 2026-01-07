@@ -12,3 +12,8 @@ EXPOSE 8080
 
 # Run the Spring Boot application
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
+# Docker run command: docker run --name library-mysql \
+                      #    -e MYSQL_DATABASE=library_db \
+                      #    -p 3306:3306 \
+                      #    -d mysql:8/0
